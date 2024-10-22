@@ -1,10 +1,9 @@
 <template>
   <div
-    class="justify-center flex items-center h-screen bg-gradient-to-b from-fuchsia-900 via-black to-black">
-    <div
-      class="w-2/3 h-[75%] bg-white rounded-lg flex flex-col text-center p-4">
+    class="justify-center flex items-center h-screen bg-gradient-to-t from-zinc-900 via-zinc-800 to-zinc-700">
+    <div class="w-2/3 h-fit bg-white rounded-lg flex flex-col text-center p-4">
       <!-- Title -->
-      <div class="w-full h-fit text-4xl font-bold">AICare Survey</div>
+      <div class="w-full h-fit text-4xl font-bold my-10">AICare Survey</div>
 
       <!-- Question Display -->
       <div class="flex-1 flex items-center justify-center">
@@ -16,10 +15,10 @@
       </div>
 
       <!-- Buttons -->
-      <div class="mt-4" v-if="currentQuestion">
+      <div class="my-10" v-if="currentQuestion">
         <button
           @click="submitAnswer"
-          class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+          class="text-white px-6 py-2 rounded-lg bg-black">
           Submit
         </button>
       </div>
